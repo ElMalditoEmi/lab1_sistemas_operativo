@@ -14,3 +14,14 @@ char * strmerge(char *s1, char *s2) {
     assert(merge != NULL && strlen(merge) == strlen(s1) + strlen(s2));
     return merge;
 }
+
+char * destructive_concat(char **dst, char *src)
+{
+    assert(dst != NULL && *dst != NULL && src != NULL);
+    char *new = strmerge(*dst, src);
+    free(*dst);
+    *dst = NULL;
+
+    assert(*dst == NULL);
+    return new;
+}

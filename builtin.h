@@ -5,6 +5,14 @@
 
 #include "command.h"
 
+#define BUILTIN_EXIT "exit"
+
+#define BUILTIN_CD "cd"
+
+#define BUILTIN_HELP "help"
+
+#define PATH_MAX 1024
+
 bool builtin_is_internal(scommand cmd);
 /*
  * Indica si el comando alojado en `cmd` es un comando interno

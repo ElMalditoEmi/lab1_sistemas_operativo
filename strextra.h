@@ -19,5 +19,22 @@ char * strmerge(char *s1, char *s2);
  *
  */
 
+char * destructive_concat(char **dst, char *src);
+/**
+ * Retorna la concatenación de *dst y src, pero además libera la memoria utilizada por *dst. 
+ * 
+ * USAGE:
+ * 
+ * concat = desctructive_concat(char *dst, char *src);
+ * 
+ * REQUIRES:
+ *     dst != NULL && *dst != NULL && src != NULL && dst está alojado en memoria dinámica
+ * 
+ * ENSURES:
+ *     *dst == NULL && Memoria usada por el antiguo dst liberada
+ * 
+ * 
+ */
+
 
 #endif
