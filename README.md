@@ -1,10 +1,13 @@
-# Para correrlo
+# What is this?
+Bash-like shell for linux.
+
+# How to Run It
 ```bash
   $ make
   $ ./mybash
 ```
 
 ## Integrantes
-El Emi
-La Cami
-El Ari
+@ElMalditoEmi
+@CamilaNanini
+@ArielIvanLeiva
